@@ -1,0 +1,40 @@
+
+  body {
+    margin: 0;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #f1f1f1;
+    
+    text-align: center;
+    grid-column-end: span 2;
+
+  }
+  .content {
+    background-color:darkgrey
+  }
+  .container{
+      display: grid;
+      grid-template-columns: 10% 1fr;
+      grid-template-rows: 5% 1fr;
+      height:100vh;
+  }
+  .slider{
+    background-color:aquamarine
+  }
+
+.card{
+    margin: 20px auto 0;
+    min-height:25%;
+    max-width: 50%;
+    background-color: papayawhip;
+    border-radius: 20px;
+    padding: 0.5em 1.5em;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+    
+}
+.card-title{
+    color:darkcyan;
+    text-align:center;
+}

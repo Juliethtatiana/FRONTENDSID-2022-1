@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div class="contenido">
+        <div class="card">
+            <div class="card-content">
+                <h3>Hola! mi nombre es Julieth </h3>
+                <p>I'm 19 years old and I'm a system engenieering student at Distrital University on Bogotá.
+I describe myself as a person with valuable skills, some of them are: responsibility, persistency, and intelligence. In addition, I´m a co-working person who likes to do things in the better way possible, determined to propose different projects that could be an important contribution to the company.</p>
+            </div>
+        </div>
+        <div class="card " id="agregar">
+            <div class="card-image"> 
+                <img src="descarga.jpg" alt="">
+            </div>
+            <div class="card-content">
+                <h3>Mi mascota </h3>
+                <p>I'm 19 years old and I'm a system engenieering student at Distrital University on Bogotá.
+                    I describe myself as a perso</p>
+                <button onclick="agregar()">agregar botones</button>
+                <p id="contadorClicks">Contador de clicks: <span></span> </p>
+            </div>
+            
+
+            </div>
+        
+</div>
+<script>
+    
+    var contador=0;
+    function agregar(){
+        contador++;
+        var nwbtn=document.createElement('button');
+        nwbtn.classList.add("nw-button");
+       
+        nwbtn.innerHTML="holi"+contador;
+        var element= document.getElementById("agregar");
+        if(contador % 2==0){
+            nwbtn.classList.add("par");
+            element.classList.remove("impar");
+            element.classList.add("par");
+            
+        }else{
+            nwbtn.classList.add("impar");
+            
+            element.classList.add("impar");
+        }
+        element.appendChild(nwbtn);
+        
+    }
+
+</script>
+    
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+
+body{
+    background-color:#F0F0F0;
+}
+.contenido{
+    padding: 20px;
+    display: flex; 
+    
+}
+.card{
+    background-color:white;
+    margin:auto;
+    width:30%;
+    height:100%;
+    text-align:center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card-content{
+    font-size: 20px;
+}
+.card-image{
+    width: 100%;
+}
+img{
+    width: 100%;
+
+}
+#agregar{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.nw-button{
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin:5px;
+}
+.par{
+    background-color:papayawhip;
+    border: 1px solid palevioletred
+}
+.impar{
+    background-color:deepskyblue;
+    border: 1px solid blue
+}

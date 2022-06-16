@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Overpass:wght@300;600&family=Poppins:wght@200;300;400&display=swap');
+body{
+    /*colores primarios*/
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    /*colores neutrales*/
+
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+
+    /*fuentes*/
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Overpass', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+    background-color: var(--very-light-gray);
+    font-size:15px;
+}
+.content{
+    margin:6.5em;
+}
+
+.title{
+        text-align: center;
+        
+        margin: auto;
+}
+
+h1, h2{
+    color:var(--very-dark-blue)
+}
+p{
+    color: var(--grayish-blue);
+}
+
+.card {
+    max-width:350px;
+    background-color: white;
+    padding: 2em;
+    padding-top:0.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    border-radius: 10px;
+    border-top: 5px solid;
+    place-self: center;
+}
+.card > div{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+   
+}
+.title> p{
+    font-size: 18px;
+}
+.title> h1{
+    font-size: 45px;
+    font-weight: normal;
+}
+span{
+    font-weight: bold;
+}
+
+#cyan{
+    border-color: var(--cyan);
+   
+}
+#red{
+    border-color: var(--red);
+}
+#orange{
+    border-color: var(--Orange);
+}
+#blue{
+    border-color: var(--blue);
+   
+}
+
+#tarjetas{
+    margin: auto;
+    margin-top: 50px;
+}
+
+@media(min-width:700px){
+    .title{
+        max-width:70%;
+    }
+    #tarjetas{
+        display:grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        
+    }
+    
+    
+    
+    
+    
+}
+
+@media(min-width:1400px){
+    .title{
+        max-width:32%;
+    }
+
+    #tarjetas{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 60%;
+    }
+    #cyan{
+        border-color: var(--cyan);
+        grid-row-end: span 2;
+    }
+    #red{
+        border-color: var(--red);
+    }
+    #orange{
+        border-color: var(--Orange);
+    }
+    #blue{
+        border-color: var(--blue);
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+
+}
